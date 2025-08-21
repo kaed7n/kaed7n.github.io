@@ -1,0 +1,39 @@
+/* Custom color and small overrides.
+   Put your preferred colors here. This file is loaded after main.css,
+   so these rules will override the template defaults.
+*/
+
+/* Theme variables */
+:root {
+  --accent: #1e90ff;       /* main accent (change me) */
+  --accent-dark: #0b6ed6;
+  --muted-bg: #f7fbff;
+  --sidebar-bg: #071026;
+  --text-dark: #102030;
+}
+
+/* Basic visual tweaks */
+body {
+  color: var(--text-dark);
+  background: var(--muted-bg);
+}
+
+/* Links / buttons */
+a { color: var(--accent); }
+.button { background: var(--accent); border-color: var(--accent); color: #fff; }
+.button.submit { background: var(--accent-dark); border-color: var(--accent-dark); }
+
+/* Sidebar */
+#sidebar { background: var(--sidebar-bg); color: #fff; }
+#sidebar a { color: #bfe6ff; }
+
+/* Icons */
+.icon.solid.major { color: var(--accent); }
+
+/* Footer */
+#footer { background: #f0f4f8; color: #334155; }
+
+/* Small responsive improvement for the form submit */
+@media (max-width: 480px) {
+  .button { width: 100%; display: inline-block; text-align: center; }
+}
